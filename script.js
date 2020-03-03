@@ -33,7 +33,7 @@ console.log(isChecked || !isClose);
 */
 
 // Условия
-if (2*4 == 7) {
+/* if (2*4 == 7) {
     console.log("Верно!");
 } else {
     console.log("Неверно!");
@@ -67,3 +67,75 @@ switch (num) {
     default: console.log("Что-то пошло не так");
         break;
 }
+*/
+
+// Циклы
+// let num = 50;
+// while (num < 55) {
+//     console.log(num);
+//     num++;
+// }
+
+// do {
+//     console.log(num);
+//     num++;
+// }
+// while (num < 55);
+
+// for (let i = 1; i < 8; i++) {
+//     if (i == 6) {
+//         continue;
+//     }
+//     console.log(i);
+
+// }
+
+// Функции
+/*
+let num = 20;
+
+function showFirstMessage(text) {
+    alert(text);
+    let num = 10;
+    console.log(num);
+}
+
+showFirstMessage("Привет");
+
+console.log(num);
+*/
+
+// function declaration
+/* function calc(a,b) {
+    return (a + b);
+}
+*/
+
+// function expression 
+/*var calc = function(a, b){
+    return (a + b);
+}*/
+
+// ES 6
+let calc = (a,b) => (a + b);
+
+console.log(calc(3, 4));
+console.log(calc(20, 100));
+
+function retVar() {
+    let num = 50;
+    return num;
+}
+
+let anotherNum = retVar();
+console.log(anotherNum);
+
+let str = "tEsT";
+console.log(str.length);
+console.log(str.toUpperCase());
+console.log(str.toLocaleLowerCase());
+
+let twelve = "12.2px";
+// console.log(Math.round(twelve));
+console.log(parseInt(twelve));
+console.log(parseFloat(twelve));
